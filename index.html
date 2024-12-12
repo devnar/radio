@@ -3,51 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NAR Radio</title>
+    <title>NAR Radyo</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <div class="player-container">
-        <div class="player-main">
-            <div class="cover-container">
-                <img id="cover" src="" alt="Şarkı Kapağı" class="cover-image">
+    <div class="app">
+        <div class="background-overlay"></div>
+        <div class="radio-player">
+            <div class="header">
+                <div class="header-left">
+                    <button id="menuToggle" class="icon-button">
+                        <i data-lucide="menu"></i>
+                    </button>
+                    <h1>NAR Radyo</h1>
+                </div>
+                <div class="header-right">
+                    <i data-lucide="image"></i>
+                    <i data-lucide="share"></i>
+                </div>
             </div>
-            <div class="player-info">
-                <h2 id="title" class="song-title"></h2>
-                <p id="artist" class="song-artist"></p>
-                <p id="current-time" class="current-time"></p>
-                <div class="progress-container">
-                    <input type="range" id="progress" class="progress" value="0" min="0" max="100">
-                    <div class="time-display">
-                        <span id="current-time-display">0:00</span>
-                        <span id="duration-display">0:00</span>
-                    </div>
-                </div>
-                <div class="controls">
-                    <button id="play-pause" class="control-button">Play</button>
-                </div>
+            <div class="frequency-display">
+                <p id="musicName">Nescafe Mornings with Rishi</p>
+                <h2 id="artistName">NAR</h2>
+            </div>
+            <div class="controls">
+                <button id="favoriteToggle" class="icon-button">
+                    <i data-lucide="heart"></i>
+                </button>
+                <button id="playPauseButton" class="icon-button">
+                    <i data-lucide="play"></i>
+                </button>
+                <button id="nextTrackButton" class="icon-button">
+                    <i data-lucide="skip-forward"></i>
+                </button>
             </div>
         </div>
-        <div class="tabs-container">
-            <div class="tabs">
-                <button class="tab-button active" data-tab="history">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                    <span class="sr-only">Dinleme Geçmişi</span>
+        <div id="stationsList" class="stations-list">
+            <div class="stations-header">
+                <button id="closeMenu" class="icon-button">
+                    <i data-lucide="chevron-left"></i>
                 </button>
-                <button class="tab-button" data-tab="upcoming">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                    <span class="sr-only">Yaklaşan Şarkılar</span>
-                </button>
+                <h2>Yaklaşanlar</h2>
             </div>
-            <div id="history" class="tab-content active">
-                <ul id="history-list" class="song-list"></ul>
-            </div>
-            <div id="upcoming" class="tab-content">
-                <ul id="upcoming-list" class="song-list"></ul>
-            </div>
+            <div class="stations-container"></div>
         </div>
     </div>
-    <audio id="audio" src=""></audio>
+    <audio id="audioPlayer"></audio>
     <script src="script.js"></script>
 </body>
 </html>
