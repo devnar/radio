@@ -11,7 +11,7 @@ body {
 
 .app {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
   overflow: hidden;
 }
 
@@ -78,8 +78,9 @@ body {
   margin: 2rem 0;
 }
 
-.stations-list {
+.music-list {
   position: fixed;
+  padding: 1rem;
   top: 0;
   left: -100%;
   width: 100%;
@@ -90,22 +91,22 @@ body {
   overflow-y: auto;
 }
 
-.stations-list.open {
+.music-list.open {
   left: 0;
 }
 
-.stations-header {
+.music-header {
   display: flex;
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid #eee;
 }
 
-.stations-header h2 {
+.music-header h2 {
   margin-left: 1rem;
 }
 
-.stations-container {
+.music-container {
   padding: 1rem;
 }
 
@@ -129,7 +130,7 @@ h1 {
 }
 
 @media (min-width: 768px) {
-  .stations-list {
+  .music-list {
       width: 300px;
   }
 }

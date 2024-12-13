@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="tr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="🌐 Software Developer with experience since 2019. 🤝 For now, he is developing his own projects. JS, Python, Arduino, Raspberry-pi, Android Studio, Canva" />
-    <meta property="og:title" content="NAR Radyo" />
-    <meta property="og:description" content="🌐 Software Developer with experience since 2019. 🤝 For now, he is developing his own projects. JS, Python, Arduino, Raspberry-pi, Android Studio, Canva" />
-    <meta property="og:url" content="https://devnar.github.io/radio" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://img.icons8.com/?size=48&id=13100&format=png" />
-    <meta property="og:image:alt" content="NAR Radyo logo" />
-    <meta property="og:site_name" content="NAR Radyo" />
-    <title>NAR Radyo</title>
-    <link rel="icon" href="https://img.icons8.com/?size=48&id=13100&format=png" />
-    <link href="styles.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
-    <script src="https://unpkg.com/lucide@latest"></script>
-</head>
-<body>
-    <div class="app">
-        <div class="background-overlay"></div>
-        <div class="radio-player">
-            <div class="header">
-                <div class="header-left">
-                    <button id="menuToggle" class="icon-button">
-                        <i data-lucide="menu"></i>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="🌐 Software Developer with experience since 2019. 🤝 For now, he is developing his own projects. JS, Python, Arduino, Raspberry-pi, Android Studio, Canva" />
+        <meta property="og:title" content="NAR Radyo" />
+        <meta property="og:description" content="🌐 Software Developer with experience since 2019. 🤝 For now, he is developing his own projects. JS, Python, Arduino, Raspberry-pi, Android Studio, Canva" />
+        <meta property="og:url" content="https://devnar.github.io/radio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://img.icons8.com/?size=48&id=13100&format=png" />
+        <meta property="og:image:alt" content="NAR Radyo logo" />
+        <meta property="og:site_name" content="NAR Radyo" />
+        <title>NAR Radyo</title>
+        <link rel="icon" href="https://img.icons8.com/?size=48&id=13100&format=png" />
+        <link href="styles.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet" />
+        <script src="https://unpkg.com/lucide@latest"></script>
+    </head>
+    <body>
+        <div class="app">
+            <div class="background-overlay"></div>
+            <div class="radio-player">
+                <div class="header">
+                    <div class="header-left">
+                        <button id="menuToggle" class="icon-button">
+                            <i data-lucide="menu"></i>
+                        </button>
+                        <h1>NAR Radyo</h1>
+                    </div>
+                    <div class="header-right">
+                        <i data-lucide="image"></i>
+                        <i data-lucide="user"></i>
+                    </div>
+                </div>
+                <div class="frequency-display">
+                    <p id="musicName">Ilham</p>
+                    <h2 id="artistName">NAR</h2>
+                </div>
+                <div class="controls">
+                    <button id="repeatToggle" class="icon-button">
+                        <i data-lucide="repeat"></i>
                     </button>
-                    <h1>NAR Radyo</h1>
-                </div>
-                <div class="header-right">
-                    <i data-lucide="image"></i>
-                    <i data-lucide="share"></i>
+                    <button id="playPauseButton" class="icon-button">
+                        <i data-lucide="play"></i>
+                    </button>
+                    <button id="shareButton" class="icon-button">
+                        <i data-lucide="share"></i>
+                    </button>
                 </div>
             </div>
-            <div class="frequency-display">
-                <p id="musicName">Nescafe Mornings with Rishi</p>
-                <h2 id="artistName">NAR</h2>
-            </div>
-            <div class="controls">
-                <button id="favoriteToggle" class="icon-button">
-                    <i data-lucide="heart"></i>
-                </button>
-                <button id="playPauseButton" class="icon-button">
-                    <i data-lucide="play"></i>
-                </button>
-                <button id="nextTrackButton" class="icon-button">
-                    <i data-lucide="skip-forward"></i>
-                </button>
+            <div id="musicList" class="music-list">
+                <div class="music-header">
+                    <button id="closeMenu" class="icon-button">
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <h2>Yaklaşanlar</h2>
+                </div>
+                <div class="music-container"></div>
             </div>
         </div>
-        <div id="stationsList" class="stations-list">
-            <div class="stations-header">
-                <button id="closeMenu" class="icon-button">
-                    <i data-lucide="chevron-left"></i>
-                </button>
-                <h2>Yaklaşanlar</h2>
-            </div>
-            <div class="stations-container"></div>
-        </div>
-    </div>
-    <audio id="audioPlayer"></audio>
-    <script src="script.js"></script>
-</body>
+        <audio id="audioPlayer"></audio>
+        <script src="script.js"></script>
+    </body>
 </html>
-
