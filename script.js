@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { title: "Illegal takılıyoruz",  album: "1209", source: "https://cdn1.suno.ai/5b8ef581-6354-427b-8e95-523306ed60de.mp3", cover: "https://cdn2.suno.ai/image_5b8ef581-6354-427b-8e95-523306ed60de.jpeg" },
         { title: "Kalp",  album: "1209", source: "https://cdn1.suno.ai/90cc2b38-614a-437d-b064-68c514510b3b.mp3", cover: "https://cdn2.suno.ai/image_90cc2b38-614a-437d-b064-68c514510b3b.jpeg" },
         { title: "Olmuş",  album: "1709", source: "https://cdn1.suno.ai/6d811389-b8a3-423f-abf2-4742812639ff.mp3", cover: "https://cdn2.suno.ai/image_6d811389-b8a3-423f-abf2-4742812639ff.jpeg" },
+        { title: "Sor",  album: "1709", source: "https://cdn1.suno.ai/317c2d40-2a5b-47e3-bd51-ef3e0c94d594.mp3", cover: "https://cdn2.suno.ai/image_317c2d40-2a5b-47e3-bd51-ef3e0c94d594.jpeg" },
+
         { title: "Karar",  album: "1209", source: "https://cdn1.suno.ai/c3ca2154-f8bb-4fa5-acb6-0266e2e2eee1.mp3", cover: "https://cdn2.suno.ai/image_c3ca2154-f8bb-4fa5-acb6-0266e2e2eee1.jpeg" },
         { title: "Karamsar",  album: "1209", source: "https://cdn1.suno.ai/b6207bc5-f700-4947-932d-5d9050a9ebc8.mp3", cover: "https://cdn2.suno.ai/image_b6207bc5-f700-4947-932d-5d9050a9ebc8.jpeg" },
         { title: "Karga",  album: "1709", source: "https://cdn1.suno.ai/82c117d8-49b2-4a8a-84d2-29ecdda3582f.mp3", cover: "https://cdn2.suno.ai/82c117d8-49b2-4a8a-84d2-29ecdda3582f_d8f71e5a.jpeg" },
