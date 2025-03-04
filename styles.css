@@ -48,6 +48,10 @@ body {
   gap: 1rem;
 }
 
+.header-left, .header-right a {
+  color: white;
+}
+
 .icon-button {
   background: none;
   border: none;
