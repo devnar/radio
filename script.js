@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { title: "Nerdeyim", album: "1209", source: "https://cdn1.suno.ai/6aa47c7a-3fe2-4c00-89d4-f3395b74d24f.mp3", cover: "https://cdn2.suno.ai/image_6aa47c7a-3fe2-4c00-89d4-f3395b74d24f.jpeg" },
         { title: "Ilham", album: "1209", source: "https://cdn1.suno.ai/2b69a730-9375-42f7-a349-c4e494483200.mp3", cover: "https://cdn2.suno.ai/image_2b69a730-9375-42f7-a349-c4e494483200.jpeg" },
         { title: "Illegal takılıyoruz",  album: "1209", source: "https://cdn1.suno.ai/5b8ef581-6354-427b-8e95-523306ed60de.mp3", cover: "https://cdn2.suno.ai/image_5b8ef581-6354-427b-8e95-523306ed60de.jpeg" },
+        { title: "Je tourne",  album: "1709", source: "https://cdn1.suno.ai/e4676b9e-ef2b-4053-be63-ffd5b09fca2b.mp3", cover: "https://cdn2.suno.ai/image_e4676b9e-ef2b-4053-be63-ffd5b09fca2b.jpeg" },
         { title: "Kalp",  album: "1209", source: "https://cdn1.suno.ai/90cc2b38-614a-437d-b064-68c514510b3b.mp3", cover: "https://cdn2.suno.ai/image_90cc2b38-614a-437d-b064-68c514510b3b.jpeg" },
         { title: "Olmuş",  album: "1709", source: "https://cdn1.suno.ai/6d811389-b8a3-423f-abf2-4742812639ff.mp3", cover: "https://cdn2.suno.ai/image_6d811389-b8a3-423f-abf2-4742812639ff.jpeg" },
         { title: "Sor",  album: "1709", source: "https://cdn1.suno.ai/317c2d40-2a5b-47e3-bd51-ef3e0c94d594.mp3", cover: "https://cdn2.suno.ai/image_317c2d40-2a5b-47e3-bd51-ef3e0c94d594.jpeg" },
